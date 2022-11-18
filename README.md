@@ -1,5 +1,7 @@
 # Getting Started with Create React App
 
+Live Demo: [https://choudharymahipal.github.io/whatsappclone/](https://choudharymahipal.github.io/whatsappclone/)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
