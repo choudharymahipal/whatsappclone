@@ -1,0 +1,14 @@
+.mainDivpadding{
+    padding: 10px;
+    display: flex;
+}
+
+.username{
+    margin-left: 15px;
+    color: #111b21;
+}
+
+.userStatus{
+    font-size: 12px;
+    color: #667781;
+}
