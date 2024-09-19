@@ -1,2 +1,2 @@
-# WhatsApp-Web-Clone
-WhatsApp Web clone using angular
+# WhatsAppClone
+WhatsApp clone using angular
