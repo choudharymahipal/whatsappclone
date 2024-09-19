@@ -1,0 +1,44 @@
+<div id="sidebar">
+    <div class="row1">
+        <div id="sidebarHeader">
+            <div class="avataeContainer">
+                <img src="https://cdn3.iconfinder.com/data/icons/business-avatar-1/512/11_avatar-512.png" alt="">
+            </div>
+            <div class="actionContainer">
+                <div class="icon">
+                    <img src="../../../assets/statusIcon.svg" alt="">
+                    <img src="../../../assets/chatIcon.svg" alt="">
+                    <img src="../../../assets/moreVertIcon.svg" alt="">
+                </div>
+            </div>
+        </div>
+        <div id="searchArea">
+            <i id="searchIcon" class="fa fa-search"></i>
+            <input [(ngModel)]="onSearch" id="sideSearchInput" type="text" placeholder="Search or start the new chat">
+        </div>
+    </div>
+
+    <div id="sidebarContent">
+        <!-- <div id="nochat">
+            All chats are archived
+        </div> -->
+        <div class="conversation" *ngFor="let conversation of !onSearch ? conversations : filteredConversation()"
+            (click)="conversationClicked.emit(conversation)">
+            <div class="picture">
+                <img src="../../../assets/noPic.svg" alt="">
+            </div>
+            <div class="content">
+                <div class="conversationHeader">
+                    <div class="contactname">{{conversation.name}}</div>
+                    <div class="contactedtime">{{conversation.time}}</div>
+                </div>
+                <div class="message">
+                    <img *ngIf="!conversation.readMessage" src="../../../assets/doubleTick.svg" alt="normaltick">
+                    <img *ngIf="conversation.readMessage" src="../../../assets/doubleTickBlue.svg" alt="bluetick">
+                    {{conversation.message}}
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>

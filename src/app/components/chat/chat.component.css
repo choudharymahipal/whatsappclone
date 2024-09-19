@@ -1,0 +1,140 @@
+#container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    background-color: #e7dfdc;
+}
+
+#header {
+    min-height: 67px;
+    box-shadow: 0px 4px 4px #ccc;
+    background-color: #eeeeee;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.avatarSection {
+    display: flex;
+}
+
+.picture {
+    min-width: 40px;
+    max-width: 40px;
+    margin: 0 10px;
+}
+
+.picture img {
+    max-width: 100%;
+}
+
+.conName {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    color: #333;
+}
+
+.actionButtons {
+    min-width: 50px;
+    display: flex;
+}
+
+.actionButtons img {
+    width: 20px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+#body {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 20px 50px;
+    overflow: scroll;
+    overflow: auto;
+}
+
+.message {
+    margin-top: 10px;
+    color: #767676;
+    /* width: max-content; */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.messageContent {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 10px;
+    /* flex-direction: column; */
+}
+
+.chatTime {
+    text-align: right;
+    color: #959698;
+    font-size: 13px;
+    margin-top: 2px;
+}
+
+.me {
+    align-items: flex-end;
+    /* text-align: right; */
+}
+
+.me .messageContent {
+    background-color: #dcf7c5;
+    /* align-items: flex-end; */
+}
+
+#footer {
+    min-height: 67px;
+    box-shadow: 0px 4px 4px #ccc;
+    background-color: #eeeeee;
+    display: flex;
+}
+
+#emoji {
+    flex-basis: 50px;
+    display: flex;
+    align-items: center;
+}
+
+#textArea {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+}
+
+#textArea textarea {
+    width: 100%;
+    height: 45px;
+    border: 0px;
+    border-radius: 4px;
+    resize: none;
+    outline: none;
+    padding: 14px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+#micIcon {
+    flex-basis: 50px;
+    display: flex;
+    align-items: center;
+}
+
+#micIcon img {
+    max-width: 50%;
+    padding-left: 12px;
+}
+
+#emoji img {
+    max-width: 50%;
+    padding-left: 12px;
+}

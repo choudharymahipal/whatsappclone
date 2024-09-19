@@ -1,0 +1,155 @@
+#sidebar {
+    width: 100%;
+    height: 100%;
+    border-right: 1px solid #e1e4e5;
+    display: flex;
+    flex-direction: column;
+}
+
+.row1 {
+    display: flex;
+    flex-direction: column;
+}
+
+#sidebarHeader {
+    flex-basis: 67px;
+    background-color: #eeeeee;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 20px;
+    /* padding-right: 20px; */
+    justify-content: space-between;
+}
+
+.avataeContainer {
+    flex-basis: 43px;
+    height: 43px;
+}
+
+.avataeContainer img {
+    height: 100%;
+    width: 100%;
+}
+
+.actionContainer {
+    flex-grow: 1;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    width: 110px;
+    padding-left: 120px;
+}
+
+.icon img {
+    justify-content: space-between;
+    padding-right: 15px;
+}
+
+#searchArea {
+    flex-basis: 50px;
+    background-color: #fbfbfb;
+    border-bottom: 1px solid #e1e4e5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#sideSearchInput {
+    width: 90%;
+    border: 1px solid #f7f7f7;
+    border-radius: 20px;
+    height: 70%;
+    padding-left: 60px;
+    color: #9a9a9a;
+    outline: none;
+    box-shadow: 0px 0px 3px #efefef;
+
+}
+
+::placeholder {
+    color: #9a9a9a;
+    font-weight: 100;
+}
+
+#searchIcon {
+    color: #9a9a9a;
+    left: 30px;
+    font-weight: 200;
+    position: absolute;
+}
+
+#nochat {
+    padding-top: 30px;
+    text-align: center;
+    color: #b9b9b9;
+    font-size: 18px;
+    font-family: sans-serif;
+    font-weight: 100;
+
+}
+
+#sidebarContent {
+    overflow: auto;
+}
+
+.conversation {
+    height: 67px;
+    width: 100%;
+    display: flex;
+    cursor: pointer;
+}
+
+.conversation:hover {
+    background-color: #e0e0e0;
+}
+
+.picture {
+    flex-basis: 73px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.picture img {
+    max-width: 100%;
+    width: 48px;
+}
+
+.content {
+    height: 100%;
+    flex-grow: 1;
+    border-bottom: 1px solid #f2f2f2;
+    /* padding: 20px 0px; */
+    padding-right: 10px;
+}
+
+.conversationHeader {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.message {
+    color: #717171;
+    font-size: 15px;
+    padding-top: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.message img {
+    margin-right: 3px;
+}
+
+.contactname {
+    padding-top: 12px;
+    color: #040404;
+}
+
+.contactedtime {
+    padding-top: 14px;
+    color: #979797;
+    font-size: 13px;
+}
