@@ -2,7 +2,7 @@
     <div class="row1">
         <div id="sidebarHeader">
             <div class="avataeContainer">
-                <img src="https://cdn3.iconfinder.com/data/icons/business-avatar-1/512/11_avatar-512.png" alt="">
+                <h2>Chats</h2>
             </div>
             <div class="actionContainer">
                 <div class="icon">
@@ -25,7 +25,7 @@
         <div class="conversation" *ngFor="let conversation of !onSearch ? conversations : filteredConversation()"
             (click)="conversationClicked.emit(conversation)">
             <div class="picture">
-                <img src="../../../assets/noPic.svg" alt="">
+                <img class="UserDP" src="../../../assets/user.jpg" alt="">
             </div>
             <div class="content">
                 <div class="conversationHeader">

@@ -1,7 +1,7 @@
 #background_header {
     width: 100%;
     height: 20vh;
-    background-color: #019688;
+    background-color: #00a884;
 }
 
 #background_body {
@@ -14,8 +14,8 @@
     top: 0%;
     bottom: 0%;
     margin: auto;
-    width: 70%;
-    height: 90%;
+    width: 97%;
+    height: 95%;
     background-color: #fff;
     right: 0px;
     left: 0px;
@@ -35,7 +35,7 @@ app-sidebar {
 }
 
 #chat {
-    background-color: #f7f9fa;
+    background-color: #f0f2f5;
     flex-grow: 1;
 }
 
