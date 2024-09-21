@@ -2,15 +2,29 @@
 <div id="background_body"></div>
 
 <div id="chatContainer">
-  <app-sidebar (conversationClicked)="onConversationSelected($event)"></app-sidebar>
+  <div class="SideIconDiv">
+    <div>
+      <img class="SideIconImg" title="Chats" src="../assets/chatIcon.svg" />
+    </div>
+    <div>
+      <img class="SideIconImg" title="Status" src="../assets/statusIcon.svg" />
+    </div>
+    <div>
+      <img class="SideIconImg" title="Channel" src="../assets/chatIcon.svg" />
+    </div>
+  </div>
+  <app-sidebar
+    (conversationClicked)="onConversationSelected($event)"></app-sidebar>
 
   <div id="chat">
     <div id="chatplaceholder" *ngIf="!conversation">
-      <img width="400" src="../assets/phoneIcon.png" alt="phone">
-      <h2>Keep your phone connected</h2>
-      <p>WhatsApp connects to your phone to sync messages. To reduce <br>data usage,connect your phone to Wi-Fi.</p>
+      <img width="350" src="../assets/phoneIcon.png" alt="phone">
+      <h2 style="font-size: 30px;">Download WhatsApp for Mac</h2>
+      <p style="font-size: 15px;">Make calls and get a faster experience when you download the Mac
+        app.</p>
+      <button class="BtnAppStore">Get from App Store</button>
       <div class="seperator"></div>
-      <p>WhatsApp is available for MAC. <a href="#"> Get it here</a></p>
+      <p style="font-size: 15px;color:#8696a0;">Your personal messages are end-to-end encrypted</p>
     </div>
     <app-chat [conversation]="conversation" *ngIf="conversation"></app-chat>
   </div>

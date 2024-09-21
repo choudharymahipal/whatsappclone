@@ -1,20 +1,19 @@
 <div id="sidebar">
     <div class="row1">
         <div id="sidebarHeader">
-            <div class="avataeContainer">
+            <div>
                 <h2>Chats</h2>
             </div>
             <div class="actionContainer">
                 <div class="icon">
-                    <img src="../../../assets/statusIcon.svg" alt="">
-                    <img src="../../../assets/chatIcon.svg" alt="">
-                    <img src="../../../assets/moreVertIcon.svg" alt="">
+                    <img title="New Chat" style="width: 25px;cursor: pointer;" src="../../../assets/NewChat.png" alt="">
+                    <img title="Menu" style="cursor: pointer;" src="../../../assets/moreVertIcon.svg" alt="">
                 </div>
             </div>
         </div>
         <div id="searchArea">
             <i id="searchIcon" class="fa fa-search"></i>
-            <input [(ngModel)]="onSearch" id="sideSearchInput" type="text" placeholder="Search or start the new chat">
+            <input [(ngModel)]="onSearch" id="sideSearchInput" type="text" placeholder="Search">
         </div>
     </div>
 

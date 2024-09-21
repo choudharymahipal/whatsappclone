@@ -1,6 +1,6 @@
 #background_header {
     width: 100%;
-    height: 20vh;
+    height: 18vh;
     background-color: #00a884;
 }
 
@@ -60,4 +60,37 @@ app-sidebar {
 
 #chatplaceholder p {
     text-align: center;
+}
+
+.SideIconDiv{
+    background-color: #f0f2f5;
+}
+
+.SideIconDiv img {
+    max-width: 100%;
+    padding: 20px 20px 0px 20px;
+}
+
+.SideIconImg{
+    width: 25px;
+    cursor: pointer;
+}
+
+.BtnAppStore{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top-color: transparent;
+    border-bottom-style: solid;
+    border-top-style: solid;
+    border-bottom-color: transparent;
+    border-top-width: 1px;
+    background-color: #008069;
+    padding-top:10px;
+    padding-bottom:10px;
+    padding-left: 24px;
+    padding-right: 24px;
+    color:white;
+    font-size: 100%;
 }
