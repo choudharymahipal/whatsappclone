@@ -5,7 +5,7 @@
 }
 
 #background_body {
-    height: 80vh;
+    height: 82vh;
     background-color: #e0e0e0;
 }
 
@@ -54,8 +54,13 @@ app-sidebar {
 
 .seperator {
     width: 50%;
-    border-top: 1px solid #eaeaea;
-    margin: 20px 0px;
+    margin: 50px 0px;
+}
+
+.bottomIconDiv{
+    display: flex;
+    flex-direction: column;
+    float: inline-end;
 }
 
 #chatplaceholder p {
@@ -93,4 +98,10 @@ app-sidebar {
     padding-right: 24px;
     color:white;
     font-size: 100%;
+    margin-top: 25px;
+}
+
+.BottomLockImg{
+    vertical-align: middle;
+    width: 15px;
 }

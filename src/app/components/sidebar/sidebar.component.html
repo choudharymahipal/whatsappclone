@@ -24,7 +24,7 @@
         <div class="conversation" *ngFor="let conversation of !onSearch ? conversations : filteredConversation()"
             (click)="conversationClicked.emit(conversation)">
             <div class="picture">
-                <img class="UserDP" src="../../../assets/user.jpg" alt="">
+                <img class="UserDP" src="../../../assets/UserDP/{{conversation.dp}}" alt="">
             </div>
             <div class="content">
                 <div class="conversationHeader">

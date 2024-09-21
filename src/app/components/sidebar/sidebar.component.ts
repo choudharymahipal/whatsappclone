@@ -11,6 +11,7 @@ export class SidebarComponent implements OnInit {
   conversations = [
     {
       name: "User 1",
+      dp:"User1.jpeg",
       time: "Just Now",
       message: "Let's go",
       readMessage: false,
@@ -23,6 +24,7 @@ export class SidebarComponent implements OnInit {
     },
     {
       name: "User 2",
+      dp:"User2.jpeg",
       time: "2 min",
       message: "Hmm",
       readMessage: true,
@@ -35,6 +37,7 @@ export class SidebarComponent implements OnInit {
     },
     {
       name: "User 3",
+      dp:"User3.jpeg",
       time: "3:32 pm",
       message: "Fine",
       readMessage: false,
@@ -47,6 +50,7 @@ export class SidebarComponent implements OnInit {
     },
     {
       name: "User 4",
+      dp:"User4.jpeg",
       time: "4:50 pm",
       message: "Alright",
       readMessage: true,
@@ -59,6 +63,7 @@ export class SidebarComponent implements OnInit {
     },
     {
       name: "User 5",
+      dp:"User5.jpeg",
       time: "Yesterday",
       message: "Ok",
       readMessage: true,
@@ -71,6 +76,7 @@ export class SidebarComponent implements OnInit {
     },
     {
       name: "User 6",
+      dp:"User6.jpeg",
       time: "10 Sep",
       message: "Let's see",
       readMessage: false,
@@ -83,6 +89,7 @@ export class SidebarComponent implements OnInit {
     },
     {
       name: "User 7",
+      dp:"User7.jpeg",
       time: "3 Aug",
       message: "Yeah",
       readMessage: true,
@@ -95,6 +102,7 @@ export class SidebarComponent implements OnInit {
     },
     {
       name: "User 8",
+      dp:"User8.jpeg",
       time: "28 Jun",
       message: "It's ok",
       readMessage: false,
@@ -107,6 +115,7 @@ export class SidebarComponent implements OnInit {
     },
     {
       name: "User 9",
+      dp:"User9.jpeg",
       time: "13 Jul",
       message: "Bye",
       readMessage: true,
@@ -119,6 +128,7 @@ export class SidebarComponent implements OnInit {
     },
     {
       name: "User 10",
+      dp:"User10.jpeg",
       time: "9 Jul",
       message: "Np",
       readMessage: false,

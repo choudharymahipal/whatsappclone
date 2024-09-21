@@ -3,15 +3,33 @@
 
 <div id="chatContainer">
   <div class="SideIconDiv">
-    <div>
-      <img class="SideIconImg" title="Chats" src="../assets/chatIcon.svg" />
+    <div class="topIconImg">
+      <div>
+        <img class="SideIconImg" title="Chats" src="../assets/chatIcon.svg" />
+      </div>
+      <div>
+        <img class="SideIconImg" title="Status" src="../assets/statusIcon.svg" />
+      </div>
+      <div>
+        <img class="SideIconImg" title="Channel" src="../assets/Channel.svg" />
+      </div>
+      <div>
+        <img class="SideIconImg" title="Community" src="../assets/community.svg" />
+      </div>
+      <div>
+        <img class="SideIconImg" title="Meta AI" src="../assets/metaai.png" />
+      </div>
     </div>
-    <div>
-      <img class="SideIconImg" title="Status" src="../assets/statusIcon.svg" />
+
+    <div class="bottomIconDiv">
+      <div>
+        <img class="SideIconImg" title="Settings" src="../assets/Settings.svg" />
+      </div>
+      <div>
+        <img class="SideIconImg" title="Profile" src="../assets/user.jpg" />
+      </div>
     </div>
-    <div>
-      <img class="SideIconImg" title="Channel" src="../assets/chatIcon.svg" />
-    </div>
+
   </div>
   <app-sidebar
     (conversationClicked)="onConversationSelected($event)"></app-sidebar>
@@ -24,7 +42,7 @@
         app.</p>
       <button class="BtnAppStore">Get from App Store</button>
       <div class="seperator"></div>
-      <p style="font-size: 15px;color:#8696a0;">Your personal messages are end-to-end encrypted</p>
+      <p style="font-size: 15px;color:#8696a0;"><img class="BottomLockImg" src="../assets/lock.svg"/> Your personal messages are end-to-end encrypted</p>
     </div>
     <app-chat [conversation]="conversation" *ngIf="conversation"></app-chat>
   </div>
