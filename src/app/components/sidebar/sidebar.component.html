@@ -23,9 +23,6 @@
     </div>
 
     <div id="sidebarContent">
-        <!-- <div id="nochat">
-            All chats are archived
-        </div> -->
         <div class="conversation" *ngFor="let conversation of !onSearch ? conversations : filteredConversation()"
             (click)="conversationClicked.emit(conversation)">
             <div class="picture">
