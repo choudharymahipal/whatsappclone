@@ -43,6 +43,33 @@
     justify-content: center;
 }
 
+.filterDiv{
+    display: flex;
+    flex-direction: row;
+    padding: 0px 15px 0px 10px;
+}
+
+.GreenBadge{
+    background-color: #e7fce3;
+}
+
+.GreyBadge{
+    background-color: #f0f2f5;
+}
+
+.filterDivText{
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-right: 15px;
+    padding-left: 15px;
+    
+    border-top-left-radius: 42px;
+    border-top-right-radius: 42px;
+    border-bottom-right-radius: 42px;
+    border-bottom-left-radius: 42px;
+    margin: 5px;
+}
+
 #sideSearchInput {
     font-size: 15px;
     width: 80%;
