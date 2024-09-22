@@ -1,4 +1,4 @@
-name: whatsappclone
+name: Deploy Angular app to GitHub Pages
 
 on:
   push:
