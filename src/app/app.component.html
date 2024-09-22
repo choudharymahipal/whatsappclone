@@ -5,28 +5,28 @@
   <div class="SideIconDiv">
     <div class="topIconImg">
       <div>
-        <img class="SideIconImg" title="Chats" src="../assets/chatIcon.svg" />
+        <img class="SideIconImg" title="Chats" src="assets/chatIcon.svg" />
       </div>
       <div>
-        <img class="SideIconImg" title="Status" src="../assets/statusIcon.svg" />
+        <img class="SideIconImg" title="Status" src="assets/statusIcon.svg" />
       </div>
       <div>
-        <img class="SideIconImg" title="Channel" src="../assets/Channel.svg" />
+        <img class="SideIconImg" title="Channel" src="assets/Channel.svg" />
       </div>
       <div>
-        <img class="SideIconImg" title="Community" src="../assets/community.svg" />
+        <img class="SideIconImg" title="Community" src="assets/community.svg" />
       </div>
       <div>
-        <img class="SideIconImg" title="Meta AI" src="../assets/metaai.png" />
+        <img class="SideIconImg" title="Meta AI" src="assets/metaai.png" />
       </div>
     </div>
 
     <div class="bottomIconDiv">
       <div>
-        <img class="SideIconImg" title="Settings" src="../assets/Settings.svg" />
+        <img class="SideIconImg" title="Settings" src="assets/Settings.svg" />
       </div>
       <div>
-        <img class="SideIconImg" title="Profile" src="../assets/user.jpg" />
+        <img class="SideIconImg" title="Profile" src="assets/user.jpg" />
       </div>
     </div>
 
@@ -36,13 +36,13 @@
 
   <div id="chat">
     <div id="chatplaceholder" *ngIf="!conversation">
-      <img width="350" src="../assets/phoneIcon.png" alt="phone">
+      <img width="350" src="assets/phoneIcon.png" alt="phone">
       <h2 style="font-size: 30px;">Download WhatsApp for Mac</h2>
       <p style="font-size: 15px;">Make calls and get a faster experience when you download the Mac
         app.</p>
       <button class="BtnAppStore">Get from App Store</button>
       <div class="seperator"></div>
-      <p style="font-size: 15px;color:#8696a0;"><img class="BottomLockImg" src="../assets/lock.svg"/> Your personal messages are end-to-end encrypted</p>
+      <p style="font-size: 15px;color:#8696a0;"><img class="BottomLockImg" src="assets/lock.svg"/> Your personal messages are end-to-end encrypted</p>
     </div>
     <app-chat [conversation]="conversation" *ngIf="conversation"></app-chat>
   </div>

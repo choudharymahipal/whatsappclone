@@ -6,8 +6,8 @@
             </div>
             <div class="actionContainer">
                 <div class="icon">
-                    <img title="New Chat" style="width: 25px;cursor: pointer;" src="../../../assets/NewChat.png" alt="">
-                    <img title="Menu" style="cursor: pointer;" src="../../../assets/moreVertIcon.svg" alt="">
+                    <img title="New Chat" style="width: 25px;cursor: pointer;" src="assets/NewChat.png" alt="">
+                    <img title="Menu" style="cursor: pointer;" src="assets/moreVertIcon.svg" alt="">
                 </div>
             </div>
         </div>
@@ -26,7 +26,7 @@
         <div class="conversation" *ngFor="let conversation of !onSearch ? conversations : filteredConversation()"
             (click)="conversationClicked.emit(conversation)">
             <div class="picture">
-                <img class="UserDP" src="../../../assets/UserDP/{{conversation.dp}}" alt="">
+                <img class="UserDP" src="assets/UserDP/{{conversation.dp}}" alt="">
             </div>
             <div class="content">
                 <div class="conversationHeader">
@@ -34,8 +34,8 @@
                     <div class="contactedtime">{{conversation.time}}</div>
                 </div>
                 <div class="message">
-                    <img *ngIf="!conversation.readMessage" src="../../../assets/doubleTick.svg" alt="normaltick">
-                    <img *ngIf="conversation.readMessage" src="../../../assets/doubleTickBlue.svg" alt="bluetick">
+                    <img *ngIf="!conversation.readMessage" src="assets/doubleTick.svg" alt="normaltick">
+                    <img *ngIf="conversation.readMessage" src="assets/doubleTickBlue.svg" alt="bluetick">
                     {{conversation.message}}
                 </div>
             </div>
