@@ -9,6 +9,7 @@
             </div>
         </div>
         <div class="actionButtons">
+            <img style="opacity: 0.5;" src="assets/VideoCall.svg" alt="">
             <img src="assets/searchIcon.svg" alt="">
             <img src="assets/moreVertIcon.svg" alt="">
         </div>
@@ -27,6 +28,9 @@
             <emoji-mart (emojiClick)="emojiClicked($event)" *ngIf="emojiPickerVisible"
                 style="position: absolute; bottom: 50px" [darkMode]="false" title="Pick your emoji…" emoji="point_up">
             </emoji-mart>
+        </div>
+        <div style="padding: 18px 15px 20px 5px;">
+            <img style="opacity: 0.5;" src="assets/Plus.svg" />
         </div>
         <div id="textArea">
             <textarea [(ngModel)]="message" (keyup.enter)="submitMessage($event)"></textarea>
