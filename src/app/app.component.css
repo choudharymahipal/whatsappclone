@@ -61,6 +61,8 @@ app-sidebar {
     display: flex;
     flex-direction: column;
     float: inline-end;
+    min-height: 50px;
+    
 }
 
 #chatplaceholder p {
