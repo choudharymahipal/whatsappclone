@@ -16,14 +16,14 @@
             <input [(ngModel)]="onSearch" id="sideSearchInput" type="text" placeholder="Search">
         </div>
         <div class="filterDiv">
-            <div class="filterDivText GreenBadge"><span>All</span></div>
-            <div class="filterDivText GreyBadge"><span>Unread</span></div>
-            <div class="filterDivText GreyBadge"><span>Groups</span></div>
+            <div [ngClass]="isFilterAll? 'GreenBadge': 'GreyBadge'" class="filterDivText LinkCursor" (click)="filterMsg('All')"><span>All</span></div>
+            <div [ngClass]="isFilterUnread? 'GreenBadge': 'GreyBadge'" class="filterDivText LinkCursor" (click)="filterMsg('Unread')"><span>Unread</span></div>
+            <div [ngClass]="isFilterGroups? 'GreenBadge': 'GreyBadge'" class="filterDivText LinkCursor" (click)="filterMsg('Groups')"><span>Groups</span></div>
         </div>
     </div>
 
     <div id="sidebarContent">
-        <div class="conversation" *ngFor="let conversation of !onSearch ? conversations : filteredConversation()"
+        <div class="conversation" *ngFor="let conversation of !onSearch ? conversations : filteredConversation('All')"
             (click)="conversationClicked.emit(conversation)">
             <div class="picture">
                 <img class="UserDP" src="assets/UserDP/{{conversation.dp}}" alt="">
@@ -36,7 +36,8 @@
                 <div class="message">
                     <img *ngIf="!conversation.readMessage" src="assets/doubleTick.svg" alt="normaltick">
                     <img *ngIf="conversation.readMessage" src="assets/doubleTickBlue.svg" alt="bluetick">
-                    {{conversation.message}}
+                    <!-- Get last message -->
+                    {{conversation.messages[conversation.messages.length -1].body}}
                 </div>
             </div>
         </div>

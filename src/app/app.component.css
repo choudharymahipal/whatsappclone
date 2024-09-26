@@ -62,7 +62,9 @@ app-sidebar {
     flex-direction: column;
     float: inline-end;
     min-height: 50px;
-    
+    position: fixed;
+    left: 8;
+    bottom: 25px;
 }
 
 #chatplaceholder p {
@@ -75,7 +77,16 @@ app-sidebar {
 
 .SideIconDiv img {
     max-width: 100%;
-    padding: 20px 20px 0px 20px;
+    padding: 12px 12px 8px 12px;
+}
+
+.AllSideIcons{
+    margin: 10px;
+}
+
+.SelectedIcon{
+    border-radius: 50%;
+    background-color: #d9d9d9;
 }
 
 .SideIconImg{
@@ -90,6 +101,8 @@ app-sidebar {
     border-bottom-right-radius: 20px;
     border-top-color: transparent;
     border-bottom-style: solid;
+    border-right-color: transparent;
+    border-left-color: transparent;
     border-top-style: solid;
     border-bottom-color: transparent;
     border-top-width: 1px;
@@ -107,3 +120,9 @@ app-sidebar {
     vertical-align: middle;
     width: 15px;
 }
+
+.userProfile{
+    border-radius: 50%;
+}
+
+

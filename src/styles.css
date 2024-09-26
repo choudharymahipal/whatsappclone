@@ -11,3 +11,8 @@ a {
     color: #45bf57;
     text-decoration: none;
 }
+
+
+.LinkCursor{
+    cursor: pointer;
+}
