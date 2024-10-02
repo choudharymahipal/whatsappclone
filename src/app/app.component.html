@@ -4,34 +4,34 @@
 <div id="chatContainer">
   <div class="SideIconDiv">
     <div class="topIconImg">
-      <div class="AllSideIcons"  [ngClass]="isIconChat? 'SelectedIcon':''"
+      <div class="AllSideIcons"  [ngClass]="this.commonSvc.isChatWindow? 'SelectedIcon':''"
         (click)="onClickIconSelect('Chat')">
         <img class="SideIconImg" title="Chats" src="assets/chatIcon.svg" />
       </div>
-      <div class="AllSideIcons"  [ngClass]="isIconStatus? 'SelectedIcon':''"
+      <div class="AllSideIcons"  [ngClass]="this.commonSvc.isStatusWindow? 'SelectedIcon':''"
         (click)="onClickIconSelect('Status')">
         <img class="SideIconImg" title="Status" src="assets/statusIcon.svg" />
       </div>
-      <div class="AllSideIcons"  [ngClass]="isIconCall? 'SelectedIcon':''"
+      <div class="AllSideIcons"  [ngClass]="this.commonSvc.isChannelWindow? 'SelectedIcon':''"
         (click)="onClickIconSelect('Call')">
         <img class="SideIconImg" title="Channel" src="assets/Channel.svg" />
       </div>
-      <div class="AllSideIcons"  [ngClass]="isIconCommunity? 'SelectedIcon':''"
+      <div class="AllSideIcons"  [ngClass]="this.commonSvc.isCommunitiesWindow? 'SelectedIcon':''"
         (click)="onClickIconSelect('Community')">
         <img class="SideIconImg" title="Community" src="assets/community.svg" />
       </div>
-      <div class="AllSideIcons"  [ngClass]="isIconMeta? 'SelectedIcon':''"
+      <div class="AllSideIcons"  [ngClass]="this.commonSvc.isMetaAI? 'SelectedIcon':''"
         (click)="onClickIconSelect('Meta')">
         <img class="SideIconImg" title="Meta AI" src="assets/metaai.png" />
       </div>
     </div>
 
     <div class="bottomIconDiv">
-      <div class="AllSideIcons" [ngClass]="isIconSetting? 'SelectedIcon':''"
+      <div class="AllSideIcons" [ngClass]="this.commonSvc.isSettingsWindow? 'SelectedIcon':''"
         (click)="onClickIconSelect('Setting')">
         <img class="SideIconImg" title="Settings" src="assets/Settings.svg" />
       </div>
-      <div class="AllSideIcons"  [ngClass]="isIconProfile? 'SelectedIcon':''"
+      <div class="AllSideIcons"  [ngClass]="this.commonSvc.isProfileWindow? 'SelectedIcon':''"
         (click)="onClickIconSelect('Profile')">
         <img class="SideIconImg" title="Profile" src="assets/user.jpg" />
       </div>
