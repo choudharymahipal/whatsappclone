@@ -1,4 +1,5 @@
 import { Component, EventEmitter, OnInit, Output } from "@angular/core";
+import { CommonService } from "src/app/Services/common.service";
 
 @Component({
   selector: "app-sidebar",
@@ -145,7 +146,7 @@ export class SidebarComponent implements OnInit {
       });
     }
   }
-  constructor() {}
+  constructor(public commonSvc:CommonService) {}
 
   ngOnInit(): void {}
 
