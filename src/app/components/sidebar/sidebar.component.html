@@ -60,77 +60,13 @@
 </div>
 
 <!-- Status -->
-<div id="sidebar" *ngIf="this.commonSvc.isStatusWindow">
-    <div class="row1">
-        <div id="sidebarHeader">
-            <div>
-                <h2>Status</h2>
-            </div>
-            <div class="actionContainer">
-                <div class="icon">
-                    <img title="New Chat" style="width: 25px;cursor: pointer;"
-                        src="assets/NewChat.png" alt>
-                    <img title="Menu" style="cursor: pointer;"
-                        src="assets/moreVertIcon.svg" alt>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div id="sidebarContent">
-        <div class="conversation">
-            <div class="picture">
-                <img class="UserDP" src="assets/user.jpg" alt>
-            </div>
-            <div class="content">
-                <div class="conversationHeader">
-                    <div class="contactname">My Status</div>
-                </div>
-                <div class="message">
-                    Click to add status update
-                </div>
-            </div>
-        </div>
-
-    </div>
-</div>
+<app-status *ngIf="this.commonSvc.isStatusWindow"></app-status>
 
 <!-- Channel -->
-<div id="sidebar" *ngIf="this.commonSvc.isChannelWindow">
-    <div class="row1">
-        <div id="sidebarHeader">
-            <div>
-                <h2>Channel</h2>
-            </div>
-            <div class="actionContainer">
-                <div class="icon">
-                    <img title="New Chat" style="width: 25px;cursor: pointer;"
-                        src="assets/NewChat.png" alt>
-                    <img title="Menu" style="cursor: pointer;"
-                        src="assets/moreVertIcon.svg" alt>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+<app-channel *ngIf="this.commonSvc.isChannelWindow"></app-channel>
 
 <!-- Communities -->
-<div id="sidebar" *ngIf="this.commonSvc.isCommunitiesWindow">
-    <div class="row1">
-        <div id="sidebarHeader">
-            <div>
-                <h2>Communities</h2>
-            </div>
-            <div class="actionContainer">
-                <div class="icon">
-                    <img title="New Chat" style="width: 25px;cursor: pointer;"
-                        src="assets/NewChat.png" alt>
-                    <img title="Menu" style="cursor: pointer;"
-                        src="assets/moreVertIcon.svg" alt>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+<app-communities *ngIf="this.commonSvc.isCommunitiesWindow"></app-communities>
 
 <!-- Meta AI -->
 <div id="sidebar" *ngIf="this.commonSvc.isMetaAI">
@@ -152,39 +88,7 @@
 </div>
 
 <!-- Settings -->
-<div id="sidebar" *ngIf="this.commonSvc.isSettingsWindow">
-    <div class="row1">
-        <div id="sidebarHeader">
-            <div>
-                <h2>Settings</h2>
-            </div>
-            <div class="actionContainer">
-                <div class="icon">
-                    <img title="New Chat" style="width: 25px;cursor: pointer;"
-                        src="assets/NewChat.png" alt>
-                    <img title="Menu" style="cursor: pointer;"
-                        src="assets/moreVertIcon.svg" alt>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+<app-settings *ngIf="this.commonSvc.isSettingsWindow"></app-settings>
 
 <!-- Profile -->
-<div id="sidebar" *ngIf="this.commonSvc.isProfileWindow">
-    <div class="row1">
-        <div id="sidebarHeader">
-            <div>
-                <h2>Profile</h2>
-            </div>
-            <div class="actionContainer">
-                <div class="icon">
-                    <img title="New Chat" style="width: 25px;cursor: pointer;"
-                        src="assets/NewChat.png" alt>
-                    <img title="Menu" style="cursor: pointer;"
-                        src="assets/moreVertIcon.svg" alt>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+<app-profile *ngIf="this.commonSvc.isProfileWindow"></app-profile>

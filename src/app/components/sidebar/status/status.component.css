@@ -133,8 +133,11 @@
     height: 100%;
     flex-grow: 1;
     border-bottom: 1px solid #f2f2f2;
-    /* padding: 20px 0px; */
     padding-right: 10px;
+}
+
+.borderTop{
+    border-top: 1px solid #f2f2f2;
 }
 
 .conversationHeader {
@@ -168,4 +171,45 @@
 
 .UserDP {
     border-radius: 50%;
+}
+
+.statusBreakLine {
+    background-color: #f0f2f5;
+    height: 10px;
+}
+
+.statusRecentLabel{
+    text-transform: uppercase;
+    font-size: 16px;
+    color:#008069;
+    padding: 20px 20px 20px 20px;
+    font-weight: 400;
+    opacity: 0.7;
+}
+
+.BottomLockImg{
+    vertical-align: middle;
+    width: 15px;
+}
+
+.lastText{
+    padding: 20px 5px 20px 5px;
+    text-align: center;
+    font-size: .75rem;
+    color:#8696a0;
+    line-height: 1.3333;
+    white-space: normal;
+    font-weight: normal;
+    word-break: break-word;
+}
+
+.extraLink{
+    color:#027eb5;
+    cursor: pointer;
+}
+
+.statusBorder{
+    border: 2.5px solid green;
+    border-radius: 50%;
+    border-style: dashed;
 }
