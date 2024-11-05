@@ -169,3 +169,15 @@
 .UserDP {
     border-radius: 50%;
 }
+
+.statusBreakLine {
+    background-color: #f0f2f5;
+    height: 10px;
+}
+
+.statusRecentLabel{
+    text-transform: uppercase;
+    font-size: 16px;
+    color:#008069;
+    padding: 20px 20px 20px 20px;
+}
