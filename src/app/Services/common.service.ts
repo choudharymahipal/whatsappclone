@@ -4,8 +4,8 @@ import { Injectable } from "@angular/core";
   providedIn: "root",
 })
 export class CommonService {
-  isChatWindow: boolean = false; //Default opened window
-  isStatusWindow: boolean = true;
+  isChatWindow: boolean = true; //Default opened window
+  isStatusWindow: boolean = false;
   isChannelWindow: boolean = false;
   isCommunitiesWindow: boolean = false;
   isMetaAI: boolean = false;
